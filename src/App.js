@@ -29,7 +29,7 @@ function App() {
   const handleSubmit = (event) => {
     setLoading(true);
     event.preventDefault();
-    fetch('http://abcd.com/api/sendEmail', {
+    fetch('https://emailme.onrender.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
