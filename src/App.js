@@ -15,12 +15,11 @@ import redux from './assets/redux.svg';
 import render from './assets/render.svg';
 import { Slide } from "react-awesome-reveal";
 import Projects from './components/projects';
-import axios from 'axios';
 
 function App() {
   const [FormData, setFormData] = useState({
-    name:"",
-    email:"",
+    senderName:"",
+    senderEmail:"",
     message:""
   });
   const [responseMessage, setResponseMessage] = useState("");
@@ -29,7 +28,7 @@ function App() {
   const handleSubmit = (event) => {
     setLoading(true);
     event.preventDefault();
-    fetch('https://emailme.onrender.com', {
+    fetch('https://emailme.onrender.com/sendEmail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -268,16 +267,16 @@ I love learning about new technologies, <br/> what problems are they solving and
             <input 
               type="text" 
               placeholder="Your Name"
-              name='name'
-              value={FormData.name}
+              name='senderName'
+              value={FormData.senderName}
               onChange={handleInputChange}
               required
             />
             <input 
               type="email"
               placeholder="Your Email"
-              name='email'
-              value={FormData.email}
+              name='senderEmail'
+              value={FormData.senderEmail}
               onChange={handleInputChange}
                 
               required
