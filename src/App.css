@@ -19,7 +19,7 @@ body {
   display: flex;
   background-color:#5A698F;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .navbar {
@@ -113,6 +113,30 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.div7 {
+  background-color: transparent;
+  width: 100%;
+  height: 50%;
+  padding-top: 5%;
+  padding-right: 1%;
+  border: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.div8 {
+  background-color: lavender;
+  width: auto;
+  border-radius: 5px;
+  margin-left: 50%;
+}
+
+.div7 p {
+  text-align: left;
+  padding: 10px;
+  padding-top: 20px;
+  font-weight: lighter;
+}
 
 .cards {
   width: auto;
@@ -244,3 +268,75 @@ button:hover {
 .focus:hover {
   transform: scale(1.05);
 }
+
+/* @media (max-width: 768px) {
+  .navbar {
+    padding: 0; 
+    height: 20px
+  }
+
+  .navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 20px;
+    font-size: xx-small;
+  }
+
+  #hero {
+    height: 400px; 
+    padding: 2rem 0;
+  }
+
+  #hero h1 {
+    font-size: 2rem; 
+    margin-top: 6rem;
+  }
+
+  .aboutMeDiv {
+    height: auto;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards .div2,
+  .cards .div3,
+  .cards .div4 {
+    width: 100%;
+    margin-bottom: 2rem; 
+  }
+
+  .form {
+    width: 100%; 
+  }
+
+  .aboutMeDiv {
+    height: 300px;
+    width: 100%;
+    background-size: contain;
+  }
+
+  .div7 {
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+  }
+  
+  .div8 {
+    background-color: lavender;
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  .div7 p {
+    text-align: left;
+    padding: 10px;
+    padding-top: 20px;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: 768px) {
+  
+} */

@@ -80,28 +80,9 @@ function App() {
               backgroundImage:`url(${aboutMe})`
             }}>
 
-              <div style={{
-              backgroundColor:'transparent',
-              width:'100%',
-              height:'50%',
-              paddingTop:'5%',
-              paddingRight:'1%',
-              border:'none',
-              position:'absolute',
-              zIndex:'2'
-            }}>
-              <div style={{
-                backgroundColor:'lavender',
-                width:'auto',
-                borderRadius:'5px',
-                marginLeft:'50%'
-              }}>
-                <p style={{
-                  textAlign:'left',
-                  padding:'10px',
-                  paddingTop:'20px',
-                  fontWeight:'lighter'
-                }}>
+              <div className='div7'>
+              <div className='div8'>
+                <p>
                 Web Developer with knowledge of React.js, Redux, node, mongoDB, HTML and CSS. <br/> currently learning React for Web Apllication.<br/><br/>
 
 I am passionate programmer and a learner, born and brought up in India. <br/> Currently, I am enrolled in AlmaBetter - Full Stack Web Development Program.<br/><br/>
