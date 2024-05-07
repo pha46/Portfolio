@@ -6,10 +6,10 @@ import youtubeSubscribers from '../assets/Screenshot (13).png';
 import EntertainmentApp from '../assets/Screenshot (14).png';
 
 function Projects() {
-  const [show, setShow] = useState(false);
+  const [visibleDiv, setVisibleDiv] = useState(null);
 
-  const handleToggle = () => {
-    setShow(!show);
+  const handleToggle = (divId) => {
+    setVisibleDiv(visibleDiv === divId ? null : divId);
   }
 
     return (
@@ -37,10 +37,10 @@ function Projects() {
                   <img src={resumeBuilder}
                 alt="Resume-builder"/>
                       <div>
-                        <button onClick={handleToggle}>
+                        <button onClick={() => handleToggle('project1')}>
                             PROJECT DETAILS
                         </button>
-                        {show && 
+                        {visibleDiv === 'project1' && 
                         <div className="project-details">
                           <div class="card-body">
                       <strong>Description: </strong>
@@ -99,10 +99,10 @@ function Projects() {
                   <img src={youtubeSubscribers} 
                 alt="Youtbe Subscribers"/>
                       <div>
-                        <button onClick={handleToggle}>
+                        <button onClick={() => handleToggle('project2')}>
                             PROJECT DETAILS
                         </button>
-                        {show && 
+                        {visibleDiv === 'project2' && 
                         <div className="project-details">
                           <div class="card-body">
                       <strong>Description: </strong>
@@ -160,10 +160,10 @@ function Projects() {
                   <img src={EntertainmentApp}
                 alt="EntertainmentApp"/>
                       <div>
-                        <button onClick={handleToggle}>
+                        <button onClick={() => handleToggle('project3')}>
                             PROJECT DETAILS
                         </button>
-                        {show && 
+                        {visibleDiv === 'project3' && 
                         <div className="project-details">
                           <div class="card-body">
                       <strong>Description: </strong>
