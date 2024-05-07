@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  width: 100%;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -82,11 +82,16 @@ body {
   color: #FFFFFF;
 }
 
+.aboutMeDiv {
+  height: 520px;
+  background-size: contain;
+}
+
 section {
   padding: 2rem 0;
   padding-top: 3.5rem;
-  width: 100% auto;
-  height: 600px auto;
+  width: 100%;
+  height: auto;
   text-align: center;
 }
 
@@ -153,6 +158,10 @@ hr {
   text-decoration-line: none;
   text-align: left;
   padding: 10px;
+}
+
+.card:hover {
+  color: #FC4747;
 }
 
 .card img {

@@ -73,18 +73,11 @@ function App() {
         <section id='about'>
           <h2>About Me</h2>
           <div style={{
-            display:'flex',
-            flexDirection:'row',
-            justifyItems:'center',
-            justifyContent:'space-between',
             width:'100%'
           }}>
             <Slide direction='left'>
-            <div style={{
-              backgroundImage:`url(${aboutMe})`,
-              backgroundSize:'contain',
-              width:'1348px',
-              height:'520px'
+            <div className='aboutMeDiv' style={{
+              backgroundImage:`url(${aboutMe})`
             }}>
 
               <div style={{
@@ -97,7 +90,6 @@ function App() {
               position:'absolute',
               zIndex:'2'
             }}>
-            {/* <Slide direction='bottom'> */}
               <div style={{
                 backgroundColor:'lavender',
                 width:'auto',
@@ -140,7 +132,6 @@ I love learning about new technologies, <br/> what problems are they solving and
                   </button>
                 </div>
               </div>
-            {/* </Slide> */}
             </div>
             </div>
             </Slide>
